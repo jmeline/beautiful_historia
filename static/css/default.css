@@ -2,29 +2,33 @@ body {
     text-align: center;
 }
 
-#page {
-    width: 960px;
-    text-align: left;
-    margin: 1px auto 20px auto;
-    background-right-color: #323232;
+#header {
+    background-color: black;
+    color: #ffffff;
+    text-align: center;
+    padding: 5px;
 }
 
-#sidebar {
+#nav {
     float: left;
+    height: 900px;
     width: 200px;
-    border: 1px solid #000;
+    background-color: #eeeeee;
+    line-height: 60px;
 }
 
 #content {
     float: left;
-    width: 600px;
-    border: 1px solid #f00;
+    width: 500px;
+    height: 600px;
     padding: 10px;
+    text-align: left;
 }
 
-#content2 {
-    float: left;
-    width: 600px;
-    border: 1px solid #f00;
-    padding: 10px;
+#footer {
+    background-color: black;
+    color: #ffffff;
+    clear: both;
+    text-align: center;
+    padding: 5px;
 }

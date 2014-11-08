@@ -6,7 +6,7 @@ from article import views
 
 urlpatterns = patterns("",
                     ## Tutorial 4 Advanced urls/views
-                    url(r'^all/$', views.articles),
+                    url(r'^$', views.articles),
                     url(r'^get/(?P<article_id>\d+)/$', views.article),
 )
 

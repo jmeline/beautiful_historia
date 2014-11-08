@@ -1,16 +1,23 @@
 <!DOCTYPE html>
+{% load staticfiles %}
+
 <html>
 <head lang="en">
     <meta charset="UTF-8">
     <title>{% block title %} My Base Template {% endblock %}</title>
-
-    <style type="text/css">
-
-    </style>
-
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/default.css' %}">
 </head>
 <body>
-    <div id="page">
+    <div id="header">
+        <h1>SITE!</h1>
+    </div>
+
+    <div id="nav">
+        {% block sidebar %}
+        <a href="/articles/">Articles</a><br>
+        <a href="/admin/">Admin</a><br>
+        {% endblock %}
+    </div>
 
     <div id="content">
         {% block content%}
@@ -18,22 +25,10 @@
         {% endblock %}
     </div>
 
-    <div id="sidebar">
-        {% block sidebar %}
-        <ul>
-            <li><a href="/articles/all">Articles</a></li>
-            <li><a href="/admin/">Admin</a></li>
-        </ul>
-        {% endblock %}
+    <div id="footer">
+        <h2>Copyright! Better watch out!</h2>
     </div>
 
-    <div id="content2">
-        {% block content2 %}
-        This is another content area
-        {% endblock %}
-    </div>
-
-    </div>
 
 </body>
 </html>
