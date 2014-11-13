@@ -3,7 +3,7 @@ body {
 }
 
 #header {
-    background-color: purple;
+    background-color: black;
     color: #ffffff;
     text-align: center;
     padding: 15px;
@@ -15,7 +15,6 @@ body {
     width: 200px;
     background-color: #008080;
     line-height: 60px;
-    color: ;
 }
 
 #content {

@@ -6,8 +6,8 @@ from article import views
 
 urlpatterns = patterns("",
                     ## Tutorial 4 Advanced urls/views
-                    url(r'^$', views.articles),
-                    url(r'^get/(?P<article_id>\d+)/$', views.article),
+                    url(r'^$', views.articles, name='home'),
+                    url(r'^get/(?P<article_id>\d+)/$', views.article, name='article'),
 )
 
 ## Tutorial 3 urls/views
