@@ -3,8 +3,11 @@
 /* Padding below the footer and lighter body text */
 
 body {
-  padding-bottom: 40px;
-  color: #5a5a5a;
+  /*padding-bottom: 40px;*/
+  color: #000000;
+  /* nice warm blue/green color */
+  background-color: #006666 
+
 }
 
 
@@ -32,6 +35,11 @@ body {
 .navbar-wrapper .navbar .container {
   width: auto;
 }
+
+/* CUSTOMIZE THE PANEL
+-------------------------------------------------- */
+.panel-body {
+background: #FFCCFF;}
 
 
 /* CUSTOMIZE THE CAROUSEL
