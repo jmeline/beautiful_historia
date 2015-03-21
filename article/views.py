@@ -15,6 +15,12 @@ def article(request, article_id=1):
     return render_to_response('article.html',
                               {'article': Article.objects.get(id=article_id)})
 
+def index(request):
+    return render_to_response('index.html')
+
+def about(request):
+    return render_to_response('about.html')
+
 '''
 def hello(request):
     """

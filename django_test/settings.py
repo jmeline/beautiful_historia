@@ -50,11 +50,12 @@ MIDDLEWARE_CLASSES = (
 )
 
 TEMPLATE_DIRS = (
-    "/home/jmeline/Projects/django-mike/django_test/django_test/templates/",
-    "/home/jmeline/Projects/django-mike/django_test/article/templates/",
+    # "/home/jmeline/Projects/django_test/django_test/templates/",
+    "/home/jmeline/Projects/django_test/article/templates/",
 )
 
-ROOT_URLCONF = 'django_test.urls'
+# ROOT_URLCONF = 'django_test.urls'
+ROOT_URLCONF = 'article.urls'
 
 WSGI_APPLICATION = 'django_test.wsgi.application'
 
@@ -89,6 +90,6 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = (
-    ('assets', '/home/jmeline/Projects/django-mike/django_test/static/'),
+    ('assets', '/home/jmeline/Projects/django_test/static/'),
 )
 
