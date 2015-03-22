@@ -21,6 +21,13 @@ def index(request):
 def about(request):
     return render_to_response('about.html')
 
+def gallery(request):
+    return render_to_response('gallery.html')
+
+def contact(request):
+    return render_to_response('contact.html')
+
+
 '''
 def hello(request):
     """

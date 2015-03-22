@@ -1,10 +1,67 @@
 <!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title></title>
-</head>
-<body>
+{% extends "base.html" %}
 
-</body>
-</html>
+{% load static %}
+
+
+{% block title %} About {% endblock %}
+
+{% block sitename %} Beautiful Historia {% endblock %}
+
+{% block navbar %}
+<li><a href="/">Home</a></li>
+<li> <a href="/about">About</a></li>
+<li class="active"><a href="/gallery">Gallery</a></li>
+<li><a href="/contact">Contact</a></li>
+{% endblock %}
+
+{% block content %}
+
+ <div class="container">
+
+    <h2> Gallery </h2>
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-2">
+
+        <div class="panel panel-default">
+          <div class="panel-body">
+              <div class="center-block">
+                  <img class="img-rounded" src="{% static 'assets/images/bridge over water in fall.jpg' %}" alt="Bridge over water in fall" width="160" height="110">
+                  
+                  "Autumn Peace"
+This is the first painting I finished in my paint class. After I graduated with my bachelors in psychology I wanted to reward myself for the last four years of hard work. I had always wanted to take a painting class, I heard of one taught by a lovely grandma. It was hard learning to be patient with myself. If I learned anything on this painting, it was "BE PATIENT". I picked this picture because I thought "oh, that will be an easy picture to start on" and maybe it was, but it sure didn't feel like it. I felt like it took forever to do this one. I worked on this picture every Friday for three hours for 8 months. I loved this picture because of the fall colors and the bridge over water. It looks so serene to me - causing one to really take a step back and remember that sometimes it's worth it to take a breath and take in all the colors around you. Which is exactly what I was not feeling by the end of this painting - but sometimes I'm glad emotions aren't always painted into the picture. 
+              </div>
+              
+          </div>
+        </div>
+            
+          <h2>Bridge over water in fall</h2>
+          <p>Get your portait painted</p>
+          <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-2">
+          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+          <h2>Heading</h2>
+          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+          <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-2">
+          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+          <h2>Heading</h2>
+          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+
+
+
+    </div>
+
+{% endblock content %}
+
+
+
+
+

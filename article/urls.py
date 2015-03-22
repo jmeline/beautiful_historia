@@ -10,8 +10,11 @@ urlpatterns = patterns("",
                     # url(r'^$', views.articles, name='home'),
                     url(r'^$', views.index, name='index'),
                     url(r'^about/', views.about, name='about'),
+                    url(r'^gallery/', views.gallery, name='gallery'),
+                    url(r'^contact/', views.contact, name='contact'),
                     url(r'^get/(?P<article_id>\d+)/$', views.article, name='article'),
                     (r'^admin/', include(admin.site.urls)),
+
 
 
 
