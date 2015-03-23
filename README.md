@@ -1,4 +1,4 @@
 beautiful_historia
 ==================
 
-Beautiful Historia Django website
+Learning Django by creating a website for an art website: Beautiful Historia
